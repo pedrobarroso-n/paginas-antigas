@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Aula dia - 23/06</title>
+		<style>
+			*{
+				width: 300px;
+				margin: 0;
+				padding-left: 50px;
+				font-size: 50px;
+			}
+
+			div:nth-child(3):hover{
+				background-color: silver;
+			}
+
+			div:nth-child(2):hover{
+				background-color: gold;
+			}
+
+			p:nth-child(2):hover{
+				background-color: red;
+				transform: rotate(360deg);
+				transition: 0.5s;
+			}
+            
+            div:nth-child(4):hover{
+            	background-image: url(imagens/negao.jpg);
+            	background-size: contain;
+            	transform: rotate(720deg) scale(2);
+            	transition: 1.7s;
+            }
+            body{
+            	background-color: beige;
+            	font-family: monospace;
+            }
+
+        </style>
+	</head>
+	<body>
+		<div>
+			<div>
+				<p>zero</p>
+				<p>um</p>
+			</div>
+			<div>
+				<p>dois</p>
+			</div>
+			<div>
+				<p>tres</p>
+			</div>
+			<div>
+				<p>quatro</p>
+			</div>
+		</div>
+</html>

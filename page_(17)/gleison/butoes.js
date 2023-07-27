@@ -1,0 +1,1 @@
+/*Bem não sei JavaScript mas ainda vou aprender e inserir isso aqui*/

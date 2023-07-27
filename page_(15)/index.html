@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Aula dia 22/09</title>
+		<style>
+
+			*{
+				padding: 0;
+				margin: 0 auto;
+				font-size: 1.1em;
+			}
+			body{
+				line-height: 1.2;
+				font-family: sans-serif;
+			}
+			h1{
+				font-size: 2.8em;
+				color: blueviolet;
+			}
+			a{
+				border: solid blueviolet;
+				color:  blueviolet;
+				border-radius: 15px;
+				text-decoration: none;
+			}
+			a:hover{
+				transition: 1s;;
+				color: black;
+				border: solid black;
+				background-color: cyan;
+
+			}
+			header{
+				font-size: 1.3em;
+				text-align: center;
+				background-image: url(prog.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 100vh;
+			}
+			.sec1{
+				padding: 1%;
+				background-color: skyblue;
+			}
+			.sec2{
+				padding: 1%;
+				background-color: skyblue;
+			}
+			.sec3{
+				display: flex;
+			}
+			.art1{
+				background-color: cadetblue;
+			}
+			.art2{
+				background-color: darkcyan;
+			}
+			.art3{
+				background-color: cyan;
+			}
+			article{
+				width: 33.3333%;
+				padding: 1%;
+			}
+			footer{
+				padding: 1%;
+				text-align: center;
+				background-color: skyblue;
+			}
+			@media only screen and (max-width:  900px){
+				.sec3{
+				display: block;
+			    }
+			    article{
+			    	width: 100%;
+			    	padding: 1%;
+			    }
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Tags Semanticas</h1>
+			<br>
+			<br>
+			<p>
+				deixaremos de lado as classicas div's para
+				<br> dar espaços as novas formas de estrutura uma pagina
+			</p>
+			<br>
+			<a href="#sec1">>>>IR PARA<<<</a>
+		</header>
+		<section class="sec1" id="sec1">
+			<p>
+				Atualmente o papel da HTML não é apenas estruturar documentos para a web, mas também descrever o significado do conteúdo presente nesses documentos por meio de tags semânticas. O HTML semântico tem como objetivo descrever o significado do conteúdo presente em documentos HTML, tornando-o mais claro tanto para programadores quanto para browsers e outras engines que processam essa informação.
+			</p>
+		</section>
+		<section class="sec2">
+			<p>
+				Lembre-se que quando escrevemos uma página web estamos preparando um conteúdo que será consumido por diferentes “clientes”, como outros desenvolvedores, browsers, algoritmos de indexação de sites de busca e, até mesmo, ferramentas de mineração de texto, por exemplo. Portanto, ao escrever código HTML, preocupe-se também com a semântica dos elementos nele presentes. O uso correto de elementos semânticos é fundamental para a construção de páginas web modernas e mais fáceis de compreender e manter.
+			</p>
+		</section>
+		<section class="sec3">
+			<article class="art1">
+				<p>
+					O elemento < figure > é uma marcação de uso específico para a inserção de uma figura. Para incluir a descrição dessa figura, podemos utilizar o elemento < figcaption >. 
+				</p>
+			</article>
+			<article class="art2">
+				<p>
+					O elemento < nav > é utilizado quando precisamos representar um agrupamento de links de navegação, que, por sua vez, são criados com os elementos < ul >, < li > e < a >.
+				</p>
+			</article>
+			<article class="art3">
+				<p>
+					O elemento < aside > é utilizado quando precisamos criar um conteúdo de apoio/adicional ao conteúdo principal. Por exemplo, ao falar de HTML semântico, podemos indicar ao leitor outros conteúdos sobre a linguagem HTML como sugestão de leitura complementar.
+				</p>
+			</article>
+		</section>
+		<footer>
+			<h5>Por &copy;Pedro Barroso Neto</h5>
+			<time datetime="2022-09-22">9/22</time>
+		</footer>
+	</body>
+</html>

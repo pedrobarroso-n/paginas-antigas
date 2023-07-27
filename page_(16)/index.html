@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Aula 23/09</title>
+		<link rel="icon" type="image/png" href="bird.png">
+		<style>
+		
+			form{
+				width: 500px;
+				font-size: 1.1em;
+				color: white;
+			}
+			body{
+				height: 100vh;
+				display: flex;
+				justify-content: center; /*centralizar vertical*/
+				align-items: center; /*centralizar horizontal*/
+				background-image: radial-gradient(blue,white);
+				font-family: sans-serif;
+			}
+			.botoes{
+				display: flex;
+				justify-content: space-around; /*espaçar itens*/
+			}
+			.botoes input{
+				width: 20%;
+				border-radius: 0px;
+			}
+			fieldset input{
+				border-radius: 0px;
+				
+			}	
+			
+		</style>
+	</head>
+	<body>
+		<form action="pagina.php" method="post">
+			<fieldset>
+				<legend>Cadastro de Usuário</legend>
+				<br>
+				<fieldset>
+				    <legend>Dados Comuns</legend>
+					<label for="nome">Nome:</label> <br>
+					<input type="text" name="nome"> <br><br>
+					<label for="email">Email:</label> <br>
+					<input type="email" name="email"> <br><br>
+					<label for="nascimento">Data de nascimento:</label> <br>
+					<input type="date" name="nascimento"> <br><br>
+					<label for="sexo">Sexo:</label> <br>
+					<input type="radio" name="sexo" value="M"><label>Homem</label> 
+					<input type="radio" name="sexo" value="F"><label>Mulher</label>
+					<input type="radio" name="sexo" value="Outros"><label>Outro</label>
+				</fieldset>
+				<fieldset>
+			    	<legend>Dados Pessoais</legend>
+		            <label for="cpf">CPF:</label> <br>
+					<input type="number" name="cpf"> <br><br>
+					<label for="endereco">Endereço:</label> <br>
+					<input type="text" name="endereco"> <br><br>
+					<label for="telefone">Telefone:</label> <br>
+					<input type="number" name="telefone">
+				</fieldset>
+				<fieldset>
+				    <legend>Select</legend>
+				    <select name="estado">
+				        <option value="">Selecione a UF</option>
+				        <option value="PI">Piauí</option>
+				        <option value="CE">Ceará</option>
+				        <option value="MA">Maranhão</option>
+				    </select>
+				</fieldset>
+				<fieldset>
+				    <legend>Checkbox - Lazer</legend>
+				    <input type="checkbox" name="lazer" value="leitura"><label>Leitura</label> <br>
+				    <input type="checkbox" name="lazer" value="jogos"><label>Jogos</label> <br>
+				    <input type="checkbox" name="lazer" value="esporte"><label>Esporte</label> <br>
+				    <input type="checkbox" name="lazer" value="desenhar"><label>Desenhar</label>
+				</fieldset>
+				<fieldset>
+				    <legend>Textarea - Sugestões</legend>
+				    <textarea name="sugestao" cols="" rows=""></textarea>
+				</fieldset>
+				<br>
+				<div class="botoes">
+					<input type="submit" value="ENVIAR" name="botao">
+					<input type="reset" value="LIMPAR" name="limpar">
+			    </div>
+		   </fieldset>
+		</form>
+	</body>
+</html>
